@@ -1,4 +1,4 @@
-package Insertion_Sort;
+package selection_Sort_Detect_Performance;
 
 
 public class SelectionSort {
@@ -28,10 +28,10 @@ public class SelectionSort {
     public static void main(String[] args) {
         int N = 20000;
         Integer[] arr = SortTestHelper.generateRandomArray(N, 0, 100000);
-        SortTestHelper.testSort("Selection_Sort_Detect_Performance.SelectionSort", arr);
+        SortTestHelper.testSort("selection_Sort_Detect_Performance.SelectionSort", arr);
 
 //        N = 200000;
 //        Integer[] arr2 = SortTestHelper.generateRandomArray(N, 0, 100000);
-//        SortTestHelper.testSort("Selection_Sort_Detect_Performance.SelectionSort", arr2);
+//        SortTestHelper.testSort("selection_Sort_Detect_Performance.SelectionSort", arr2);
     }
 }

@@ -1,11 +1,12 @@
-package Selection_Sort_Generate_Test_Cases;
+package insertion_Sort;
+
 
 public class SelectionSort {
 
     private SelectionSort() {
     }
 
-    private static void sort(Comparable[] arr) {
+    public  static void sort(Comparable[] arr) {
         int n = arr.length;
         for (int i = 0; i < n; i++) {
             for (int j = i + 1; j < n; j++) {
@@ -25,8 +26,12 @@ public class SelectionSort {
     }
 
     public static void main(String[] args) {
-        Integer[] arr = SortTestHelper.generateRandomArray(100,10,1000);
-        SelectionSort.sort(arr);
-        SortTestHelper.printArray(arr);
+        int N = 20000;
+        Integer[] arr = SortTestHelper.generateRandomArray(N, 0, 100000);
+        SortTestHelper.testSort("insertion_Sort.SelectionSort", arr);
+
+//        N = 200000;
+//        Integer[] arr2 = SortTestHelper.generateRandomArray(N, 0, 100000);
+//        SortTestHelper.testSort("Selection_Sort_Detect_Performance.SelectionSort", arr2);
     }
 }

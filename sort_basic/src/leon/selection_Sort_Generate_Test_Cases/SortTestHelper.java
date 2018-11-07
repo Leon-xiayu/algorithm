@@ -1,4 +1,4 @@
-package Selection_Sort_Generate_Test_Cases;
+package selection_Sort_Generate_Test_Cases;
 
 public class SortTestHelper {
     public static Integer[] generateRandomArray(int n, int rangeL, int rangeR) {

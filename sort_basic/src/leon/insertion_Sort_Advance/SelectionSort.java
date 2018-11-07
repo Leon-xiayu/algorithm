@@ -1,4 +1,4 @@
-package Selection_Sort_Detect_Performance;
+package insertion_Sort_Advance;
 
 
 public class SelectionSort {

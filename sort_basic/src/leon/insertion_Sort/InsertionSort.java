@@ -1,4 +1,4 @@
-package Insertion_Sort;
+package insertion_Sort;
 
 import java.util.Arrays;
 
@@ -37,11 +37,11 @@ public class InsertionSort {
         Integer[] arr2=Arrays.copyOf(arr,N);
 
 //        Integer[] arr= {2,1,4,3,7,5,1,2,6,3};
-        SortTestHelper.testSort("Insertion_Sort.InsertionSort",arr);
+        SortTestHelper.testSort("insertion_Sort.InsertionSort",arr);
 
         SortTestHelper.printArray(arr);
 
-        SortTestHelper.testSort("Insertion_Sort.SelectionSort",arr2);
+        SortTestHelper.testSort("insertion_Sort.SelectionSort",arr2);
 
         SortTestHelper.printArray(arr2);
 

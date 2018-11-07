@@ -1,4 +1,4 @@
-package Insertion_Sort;
+package insertion_Sort;
 
 import java.lang.reflect.Method;
 
