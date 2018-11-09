@@ -1,4 +1,4 @@
-package merge_sort;
+package merge_sort_advance;
 
 import insertion_Sort_Advance.SortTestHelper;
 
@@ -33,10 +33,15 @@ public class MergeSort {
         }
     }
 
+
     // 递归使用归并排序,对arr[l...r]的范围进行排序
     private static void sort(Comparable[] arr, int l, int r) {
-
-        if (l >= r) {
+    //当n小到一定程度时，插入排序要比归并排序效率高
+        /*if (l >= r) {
+            return;
+        }*/
+        if( r - l <= 15 ){
+            InsertionSort.sort(arr, l, r);
             return;
         }
         int mid = (l + r) / 2;
