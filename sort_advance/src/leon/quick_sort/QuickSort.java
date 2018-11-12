@@ -27,7 +27,7 @@ public class QuickSort {
         // arr[l+1...j] < v ; arr[j+1...i) > v
         Comparable v = arr[l];
         int j = l;
-        for (int i = l + 1; i < arr.length; i++) {
+        for (int i = l + 1; i < r; i++) {
             if (arr[i].compareTo(v) < 0) {
                 j++;
                 swap(arr, i, j);
